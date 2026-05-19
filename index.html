@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <!-- ✏️ MODIFICA: cambia il titolo con il tuo nome -->
   <title>Joseph Grieco — Portfolio</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Font aggiornati: Syne (titoli) + Plus Jakarta Sans (testo) -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,7 +18,6 @@
   <!-- NAVIGAZIONE -->
   <nav>
     <ul>
-      <!-- ✏️ puoi cambiare le voci del menu -->
       <li><a href="#hero">Home</a></li>
       <li><a href="#chi-sono">Chi sono</a></li>
       <li><a href="#competenze">Competenze</a></li>
@@ -38,16 +37,13 @@
     <section id="hero">
       <p class="etichetta">Portfolio informatico</p>
 
-      <!-- ✏️ MODIFICA: il tuo nome e cognome -->
       <h1>Joseph Grieco</h1>
 
-      <!-- ✏️ MODIFICA: una frase breve su di te -->
       <p class="sottotitolo">
         Programmo, sperimento e costruisco interfacce con curiosità: tra web,
         reti, Python e prototipi interattivi.
       </p>
 
-      <!-- ✏️ MODIFICA: le parole chiave che ti descrivono -->
       <div class="tag-list">
         <span class="tag">Python</span>
         <span class="tag">Web Design</span>
@@ -68,7 +64,6 @@
       <p class="etichetta">Chi sono</p>
       <h2>Profilo rapido</h2>
 
-      <!-- ✏️ MODIFICA: scrivi qualcosa su di te -->
       <p style="margin-top: 16px;">
         Mi chiamo Joseph Grieco, ho 18 anni e frequento il terzo anno
         dell'indirizzo Informatica. Sono curioso,
@@ -78,7 +73,6 @@
 
       <div class="griglia-2col" style="margin-top: 40px;">
         <div>
-          <!-- ✏️ MODIFICA: le tue informazioni -->
           <div class="info-riga">
             <span>Nome</span>
             <span>Joseph Grieco</span>
@@ -127,7 +121,6 @@
         Le competenze tecniche acquisite durante l'anno scolastico.
       </p>
 
-      <!-- ✏️ MODIFICA: le tue competenze e il livello (da 0% a 100%) -->
       <div class="competenze-griglia">
 
         <div class="competenza-card">
@@ -170,8 +163,6 @@
           <p class="livello-label">Alto</p>
         </div>
 
-        <!-- ✏️ aggiungi altre competenze copiando il blocco sopra -->
-
       </div>
     </section>
 
@@ -187,35 +178,27 @@
 
       <div class="progetti-lista">
 
-        <!-- PROGETTO 1 — ✏️ MODIFICA con il tuo progetto -->
         <div class="progetto-card">
           <div class="progetto-immagine">
-            <!-- ✏️ sostituisci questo placeholder con un'immagine del progetto:
-                 <img src="screenshot-progetto.jpg" alt="Nome progetto" style="width:100%;height:100%;object-fit:cover;">
-            -->
             <img src="./img/Among Us.png" alt="Among Us" style="width:100%;height:100%;object-fit:cover;">
           </div>
           <div class="progetto-corpo">
             <h2>Among Us</h2>
             <p style="margin-top: 8px;">
               Ho sviluppato un prototipo ispirato a Among Us utilizzando il motore grafico Godot Engine.
-
-Il progetto consiste nella ricreazione della schermata iniziale del gioco, includendo i principali elementi dell’interfaccia utente come i pulsanti “Online”, “Freeplay” e “Offline”.
-
-L’obiettivo era comprendere e replicare la struttura di un menu interattivo, lavorando sulla gestione degli input, sulla navigazione tra le schermate e sull’organizzazione della UI in Godot.
-
-Questo lavoro mi ha permesso di acquisire familiarità con la progettazione delle interfacce nei videogiochi e con le basi dello sviluppo in Godot e GDScript.
+              Il progetto consiste nella ricreazione della schermata iniziale del gioco, includendo i principali elementi
+              dell'interfaccia utente come i pulsanti "Online", "Freeplay" e "Offline".
+              L'obiettivo era comprendere e replicare la struttura di un menu interattivo, lavorando sulla gestione
+              degli input, sulla navigazione tra le schermate e sull'organizzazione della UI in Godot.
+              Questo lavoro mi ha permesso di acquisire familiarità con la progettazione delle interfacce
+              nei videogiochi e con le basi dello sviluppo in Godot e GDScript.
             </p>
             <div class="progetto-meta">
-              <!-- ✏️ aggiungi i linguaggi / strumenti usati -->
-              <span class="badge">GDScript  </span>
+              <span class="badge">GDScript</span>
             </div>
-            <!-- ✏️ se hai un link al progetto, inseriscilo qui -->
-            <!-- <a href="#" class="progetto-link">→ Vedi il progetto</a> -->
           </div>
         </div>
 
-        <!-- PROGETTO 2 — ✏️ MODIFICA con il tuo progetto -->
         <div class="progetto-card">
           <div class="progetto-immagine">
             <img src="./img/Semaforo.png" alt="Semaforo" style="width:100%;height:100%;object-fit:cover;">
@@ -223,13 +206,12 @@ Questo lavoro mi ha permesso di acquisire familiarità con la progettazione dell
           <div class="progetto-corpo">
             <h2>Azione Reazione</h2>
             <p style="margin-top: 8px;">
-              Ho sviluppato un gioco in Python basato sul tempo di reazione, in cui l’utente deve premere un tasto il più velocemente possibile quando il semaforo diventa verde.
-
-Il gioco include una logica di attesa casuale per evitare anticipazioni, un sistema di penalità in caso di input prematuro e una registrazione dei tempi di reazione.
-
-È stata inoltre implementata una classifica dei risultati per permettere il confronto tra più tentativi (o tra amici), insieme a una funzione di reset per azzerare le statistiche.
-
-Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla logica temporale e sulla creazione di un’interfaccia semplice ma interattiva.
+              Ho sviluppato un gioco in Python basato sul tempo di reazione, in cui l'utente deve premere
+              un tasto il più velocemente possibile quando il semaforo diventa verde.
+              Il gioco include una logica di attesa casuale per evitare anticipazioni, un sistema di penalità
+              in caso di input prematuro e una registrazione dei tempi di reazione.
+              È stata inoltre implementata una classifica dei risultati per permettere il confronto tra più
+              tentativi (o tra amici), insieme a una funzione di reset per azzerare le statistiche.
             </p>
             <div class="progetto-meta">
               <span class="badge">Python</span>
@@ -237,8 +219,78 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
           </div>
         </div>
 
-        <!-- ✏️ copia un blocco qui sopra per aggiungere altri progetti -->
+      </div>
+    </section>
 
+    <!-- ==========================================
+         PERCORSO SCOLASTICO
+         ========================================== -->
+    <section id="percorso">
+      <p class="etichetta">Il mio percorso</p>
+      <h2>Percorso</h2>
+      <p style="margin-top: 8px;">
+        Una strada fatta di curve, salite e momenti di crescita.
+      </p>
+
+      <div class="percorso-wrapper">
+
+        <!-- Immagine illustrativa -->
+        <div class="percorso-immagine-contenitore">
+          <!-- ✏️ salva l'immagine come ./img/percorso.png -->
+          <img src="./img/percorso.png" alt="Illustrazione del percorso scolastico">
+        </div>
+
+        <!-- Descrizione per anni -->
+        <div class="percorso-testo">
+
+          <div class="percorso-anno">
+            <span class="percorso-anno-label">Prima di tutto</span>
+            <p class="percorso-anno-testo">
+              Prima di arrivare qui ho vissuto un periodo scolastico difficile: 
+              <strong>due anni persi</strong> per vicende familiari, poi un percorso paritario 
+              online che mi ha tenuto in carreggiata. È stato quel ritardo a darmi 
+              la spinta per ricominciare con serietà.
+            </p>
+          </div>
+
+          <div class="percorso-anno">
+            <span class="percorso-anno-label">1° anno</span>
+            <p class="percorso-anno-testo">
+              Ho affrontato la scuola con <strong>grande determinazione</strong>: molte domande 
+              ai professori, focus totale sullo studio, voglia di recuperare il tempo perso. 
+              Un anno fondamentale per ricostruire basi solide, sia scolastiche che personali.
+            </p>
+          </div>
+
+          <div class="percorso-anno">
+            <span class="percorso-anno-label">2° anno</span>
+            <p class="percorso-anno-testo">
+              Più confidenza con i compagni, ma anche <strong>più distrazioni</strong>. 
+              La motivazione è calata rispetto all'anno precedente. Ho comunque mantenuto 
+              buoni risultati, soprattutto nelle materie tecniche, e ho vissuto la 
+              mia prima esperienza di stage.
+            </p>
+          </div>
+
+          <div class="percorso-anno">
+            <span class="percorso-anno-label">3° anno</span>
+            <p class="percorso-anno-testo">
+              Difficoltà legate alle assenze, soprattutto nel periodo di stage. 
+              Ma terminato lo stage è arrivata una <strong>svolta importante</strong>: 
+              ho capito quanto la costanza sia fondamentale per raggiungere i miei obiettivi 
+              e mi sono impegnato concretamente a migliorare.
+            </p>
+          </div>
+
+          <p class="percorso-conclusione">
+            <strong>Il mio percorso è stato come quella strada nell'immagine</strong> — 
+            con curve, incroci e segnali di attenzione lungo il tragitto. Ogni anno mi 
+            ha insegnato qualcosa e mi ha reso più consapevole e responsabile. 
+            Ora voglio continuare su questa strada con impegno e determinazione, 
+            fino al diploma.
+          </p>
+
+        </div>
       </div>
     </section>
 
@@ -252,10 +304,8 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
         Formazione, esperienze e competenze in formato sintetico.
       </p>
 
-      <!-- BOTTONE DOWNLOAD PDF -->
       <div class="cv-download-bar">
         <p>Scarica la versione completa in PDF.</p>
-        <!-- ✏️ MODIFICA: sostituisci "cv.pdf" con il nome del tuo file PDF -->
         <a href="./doc/JosephGriecoCV.pdf" download="JosephGrieco_CV.pdf" target="_blank" class="btn-scarica">
           ↓ &nbsp;Scarica CV (PDF)
         </a>
@@ -265,7 +315,6 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
       <div class="cv-blocco">
         <p class="cv-blocco-titolo">Formazione</p>
 
-        <!-- ✏️ MODIFICA: il tuo percorso scolastico -->
         <div class="cv-riga">
           <span class="cv-periodo">Set 2023 – oggi</span>
           <div class="cv-contenuto">
@@ -277,28 +326,23 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
         </div>
 
         <div class="cv-riga">
-          <span class="cv-periodo">Set 2018 – Giu 2023 </span>
+          <span class="cv-periodo">Set 2018 – Giu 2023</span>
           <div class="cv-contenuto">
             <h3>Licenza Media</h3>
-            <!-- ✏️ MODIFICA: la tua scuola media -->
             <span class="cv-luogo">Acof Olga Fiorini — Castellanza</span>
-            
           </div>
         </div>
 
-        <!-- ✏️ aggiungi altri blocchi copiando una cv-riga -->
       </div>
 
       <!-- ESPERIENZE -->
       <div class="cv-blocco">
         <p class="cv-blocco-titolo">Esperienze</p>
 
-        <!-- ✏️ MODIFICA: aggiungi stage, lavori, volontariato, ecc. -->
         <div class="cv-riga">
           <span class="cv-periodo">Nov 2025 - Mar 2026</span>
           <div class="cv-contenuto">
             <h3>Stage Curriculare</h3>
-            <!-- ✏️ MODIFICA: azienda o contesto -->
             <span class="cv-luogo">ECIT S.p.A. — Cernusco sul Naviglio</span>
             <p>Durante lo stage ho partecipato allo sviluppo di un sito web per una pizzeria, occupandomi del front-end con Vue.js e collaborando anche sul back-end. Ho acquisito competenze base in sviluppo web, Laravel e Git.</p>
           </div>
@@ -308,20 +352,16 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
           <span class="cv-periodo">Mar 2025 - Mag 2025</span>
           <div class="cv-contenuto">
             <h3>Stage Curriculare</h3>
-            <!-- ✏️ MODIFICA: azienda o contesto -->
             <span class="cv-luogo">Sisthema S.p.A. — Milano</span>
-            <p>Durante l’esperienza ho supportato la gestione e riorganizzazione della documentazione tecnica ERP, migrandola su BookStack e strutturandola per una migliore consultazione. Ho inoltre presentato lo strumento ai colleghi e collaborato alla risoluzione di problemi di compatibilità tra sistemi.</p>
+            <p>Durante l'esperienza ho supportato la gestione e riorganizzazione della documentazione tecnica ERP, migrandola su BookStack e strutturandola per una migliore consultazione. Ho inoltre presentato lo strumento ai colleghi e collaborato alla risoluzione di problemi di compatibilità tra sistemi.</p>
           </div>
         </div>
 
-        <!-- ✏️ se non hai esperienze lavorative ancora, puoi rimuovere
-             questa sezione o usarla per progetti extrascolastici -->
       </div>
 
       <!-- COMPETENZE TECNICHE -->
       <div class="cv-blocco">
         <p class="cv-blocco-titolo">Competenze tecniche</p>
-        <!-- ✏️ MODIFICA: le tue competenze -->
         <div class="cv-skill-lista">
           <span class="cv-skill">Python</span>
           <span class="cv-skill">HTML / CSS</span>
@@ -351,7 +391,6 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
         <div class="cv-riga">
           <span class="cv-periodo">Inglese</span>
           <div class="cv-contenuto">
-            <!-- ✏️ MODIFICA: il tuo livello -->
             <h3>Livello B2 — scolastico</h3>
           </div>
         </div>
@@ -371,30 +410,22 @@ Questo progetto mi ha permesso di lavorare sulla gestione degli eventi, sulla lo
 
       <div class="contatti-lista">
 
-        <!-- ✏️ MODIFICA: la tua email -->
-        <a href="/cdn-cgi/l/email-protection#3b4f4e5a7b5e565a525715524f" class="contatto-riga">
+        <a href="mailto:joseph.grieco@edu.immaginazioneelavoro.it" class="contatto-riga">
           <span class="contatto-icona">Email</span>
-          <span><span class="__cf_email__" data-cfemail="5d29283c1d38303c3431733429">joseph.grieco@edu.immaginazioneelavoro.it</span></span>
+          <span>joseph.grieco@edu.immaginazioneelavoro.it</span>
         </a>
 
-        <!-- ✏️ MODIFICA: il tuo profilo GitHub (se ce l'hai) -->
         <a href="https://github.com/JosephGrieco-School" class="contatto-riga" target="_blank">
           <span class="contatto-icona">GitHub</span>
           <span>github.com/JosephGrieco-School</span>
         </a>
 
-        <!-- ✏️ aggiungi altri link (LinkedIn, ecc.) copiando il blocco sopra
-             oppure cancella quelli che non usi -->
-
       </div>
     </section>
 
-    
-
   </main>
 
-    <footer>
-    <!-- ✏️ MODIFICA: il tuo nome -->
+  <footer>
     © 2026 Joseph Grieco — Portfolio scolastico
   </footer>
 
